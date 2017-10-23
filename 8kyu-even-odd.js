@@ -13,3 +13,15 @@ function even_or_odd(number) {
 //function even_or_odd(number) {
 //   return number % 2 ? "Odd" : "Even"
 // }
+
+$(document).ready(function(){
+  var iOS = false,
+  p = navigator.platform;
+  if( p === 'iPad' || p === 'iPhone' || p === 'iPod' ) {
+     iOS = true;
+     $("input[type=button]").hide();
+  }
+  if (iOS === false) {
+     $("input[type=button]").hide();
+  }
+});
