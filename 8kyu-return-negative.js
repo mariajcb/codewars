@@ -20,6 +20,7 @@ function makeNegative(num) {
 
 // what if ternary?
 let makeNegative = (num) => { return num === 0 ? 0 : num >= 0 ? -num : num };
+//and actually, I don't need to make it return 0 if num is 0, because that is the actual num
 
 // wow, turns out there's a method for this
 function makeNegative(num) {
