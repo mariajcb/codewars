@@ -12,4 +12,4 @@ function boolToWord( bool ){
 }
 
 //ES6+ternary
-let boolToWord = bool => bool ? 'Yes' : 'No' }
+let boolToWord = bool => bool ? 'Yes' : 'No' 
