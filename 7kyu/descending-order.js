@@ -13,4 +13,12 @@ function descendingOrder(n){
   return parseInt(notReallyArr);
 }
 
-console.log(descendingOrder(145263));
+//top Codewars solution
+function descendingOrder(n){
+  return parseInt(String(n).split('').sort().reverse().join(''))
+}
+
+//a top one that is similar to mine
+function descendingOrder(n){
+  return +(n + '').split('').sort(function(a,b){ return b - a }).join('');
+}
