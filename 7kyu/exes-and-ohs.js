@@ -9,8 +9,8 @@
 // XO("zzoo") => false
 
 function XO(str) {
- let x = (str.match(/[xX]/ig)||[]).length;
- let y = (str.match(/[oO]/ig)||[]).length;
+ let x = (str.match(/[xX]/ig)||"").length;
+ let y = (str.match(/[oO]/ig)||"").length;
  if (x === y)
  {
    return true;
